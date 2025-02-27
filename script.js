@@ -15,11 +15,18 @@ var typed = new Typed(".typing-1", {
 
 
     var typed = new Typed(".typing-text", {
-        strings: ["Hemanth.codes()", "Debugging Reality 🐞", "Coding Beyond Limits 🚀", "Java Jedi ⚔️", "Creating Magic with Code ✨"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    strings: [
+        "Eat 💻 Code 🖥️ Sleep 🔁",
+        "Think ✨ Code 💡 Repeat 🔄",
+        "Bug 🐞 Fix 🚀 Repeat 🔄",
+        "Code ⏳ Deploy ⚡ Scale 📈"
+    ],
+    typeSpeed: 80,
+    backSpeed: 50,
+    loop: true,
+    showCursor: false
+});
+
 
 
 
