@@ -7,7 +7,7 @@ var typed = new Typed(".typing", {
 });
 
 var typed = new Typed(".typing-1", {
-    strings: ["","Java Full Stack Developer", "Problem Solver", "Programmer"],
+    strings: ["", "Problem Solver", "Programmer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
