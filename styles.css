@@ -216,19 +216,6 @@ h3.hello {
     font-size: 18px;
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-@media (max-width: 768px) {
-    .typing-text {
-        min-width: 150px; /* Adjust for smaller screens */
-        font-size: 14px; /* Reduce font size if necessary */
-    }
-}
 
 @media (min-width: 1104px) {
     .about-content .left img {
@@ -678,6 +665,21 @@ i {
 .contact-box p a:hover {
     color: #ff4b5c;
 }
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+    .typing-text {
+        min-width: 150px; /* Adjust for smaller screens */
+        font-size: 14px; /* Reduce font size if necessary */
+    }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
