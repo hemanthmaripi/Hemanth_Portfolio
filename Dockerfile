@@ -1,24 +1,14 @@
-# Use official Node.js image
-FROM node:18-alpine
+# Use official nginx image
+FROM nginx:alpine
 
-# Set working directory
-WORKDIR /app
+# Remove default nginx static assets
+RUN rm -rf /usr/share/nginx/html/*
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+# Copy your site files to nginx's public folder
+COPY . /usr/share/nginx/html
 
-# Install dependencies
-RUN npm install
+# Expose port 80
+EXPOSE 80
 
-# Copy all files
-COPY . .
-
-# Build the app (for React)
-RUN npm run build
-
-# Expose port (change if your app uses a different port)
-EXPOSE 3000
-
-# Start the app (for React static build using serve)
-RUN npm install -g serve
-CMD ["serve", "-s", "build", "-l", "3000"]
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
